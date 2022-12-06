@@ -15,6 +15,8 @@
 		77372BFF293F0F5500429294 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77372BFE293F0F5500429294 /* MainListView.swift */; };
 		77372C04293F1CBA00429294 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77372C03293F1CBA00429294 /* Memo.swift */; };
 		77372C06293F1E2B00429294 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77372C05293F1E2B00429294 /* MemoStore.swift */; };
+		77372C0B293F246D00429294 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77372C0A293F246D00429294 /* MemoCell.swift */; };
+		77372C0D293F28C000429294 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77372C0C293F28C000429294 /* ComposeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		77372BFE293F0F5500429294 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		77372C03293F1CBA00429294 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		77372C05293F1E2B00429294 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
+		77372C0A293F246D00429294 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		77372C0C293F28C000429294 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +64,10 @@
 		77372BE9293F0EB000429294 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				77372C07293F241900429294 /* View */,
 				77372C02293F0FA900429294 /* Memory */,
 				77372C00293F0F8000429294 /* CoreData */,
 				77372BEA293F0EB000429294 /* SwiftUIMemoApp.swift */,
-				77372BFE293F0F5500429294 /* MainListView.swift */,
 				77372BF3293F0EB100429294 /* Assets.xcassets */,
 				77372BF5293F0EB100429294 /* SwiftUIMemo.entitlements */,
 				77372BF6293F0EB100429294 /* Preview Content */,
@@ -95,6 +99,16 @@
 				77372C05293F1E2B00429294 /* MemoStore.swift */,
 			);
 			path = Memory;
+			sourceTree = "<group>";
+		};
+		77372C07293F241900429294 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77372BFE293F0F5500429294 /* MainListView.swift */,
+				77372C0A293F246D00429294 /* MemoCell.swift */,
+				77372C0C293F28C000429294 /* ComposeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77372C0B293F246D00429294 /* MemoCell.swift in Sources */,
 				77372BF0293F0EB000429294 /* SwiftUIMemo.xcdatamodeld in Sources */,
 				77372C06293F1E2B00429294 /* MemoStore.swift in Sources */,
 				77372BFF293F0F5500429294 /* MainListView.swift in Sources */,
 				77372BEB293F0EB000429294 /* SwiftUIMemoApp.swift in Sources */,
+				77372C0D293F28C000429294 /* ComposeView.swift in Sources */,
 				77372BED293F0EB000429294 /* Persistence.swift in Sources */,
 				77372C04293F1CBA00429294 /* Memo.swift in Sources */,
 			);
