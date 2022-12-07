@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772AE7412940CD9500B1719A /* searchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772AE7402940CD9500B1719A /* searchBar.swift */; };
 		77372BEB293F0EB000429294 /* SwiftUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77372BEA293F0EB000429294 /* SwiftUIMemoApp.swift */; };
 		77372BED293F0EB000429294 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77372BEC293F0EB000429294 /* Persistence.swift */; };
 		77372BF0293F0EB000429294 /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77372BEE293F0EB000429294 /* SwiftUIMemo.xcdatamodeld */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		772AE7402940CD9500B1719A /* searchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBar.swift; sourceTree = "<group>"; };
 		77372BE7293F0EB000429294 /* SwiftUIMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77372BEA293F0EB000429294 /* SwiftUIMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoApp.swift; sourceTree = "<group>"; };
 		77372BEC293F0EB000429294 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				77372C0A293F246D00429294 /* MemoCell.swift */,
 				77372C0C293F28C000429294 /* ComposeView.swift */,
 				77372C0E293F2B8100429294 /* DetailView.swift */,
+				772AE7402940CD9500B1719A /* searchBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				77372BF0293F0EB000429294 /* SwiftUIMemo.xcdatamodeld in Sources */,
 				77372C06293F1E2B00429294 /* MemoStore.swift in Sources */,
 				77372BFF293F0F5500429294 /* MainListView.swift in Sources */,
+				772AE7412940CD9500B1719A /* searchBar.swift in Sources */,
 				77372BEB293F0EB000429294 /* SwiftUIMemoApp.swift in Sources */,
 				77372C0D293F28C000429294 /* ComposeView.swift in Sources */,
 				77372BED293F0EB000429294 /* Persistence.swift in Sources */,

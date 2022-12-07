@@ -38,7 +38,7 @@ struct DetailView: View {
         .navigationTitle("메모 보기")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar{
-            ToolbarItemGroup(placement: .automatic){
+            ToolbarItemGroup(placement: .navigationBarTrailing){
                 Button{
                     showComposer = true
                 } label: {

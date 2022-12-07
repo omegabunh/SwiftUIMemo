@@ -9,36 +9,48 @@ import SwiftUI
 
 struct MainListView: View {
     @EnvironmentObject var store: MemoStore
-    
+
     @State private var showComposer: Bool = false
     
+    @State var searchText = ""
+    
+    var filterMemo: [Memo]{
+        if searchText.isEmpty {
+            return store.list
+            } else {
+                return store.list.filter { $0.content.localizedStandardContains(searchText) }
+            }
+    }
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(store.list){ memo in
-                    NavigationLink{
+            List{
+                ForEach(filterMemo) { memo in
+                    NavigationLink {
                         DetailView(memo: memo)
-                    }label: {
+                    } label: {
                         MemoCell(memo: memo)
                     }
                 }
-                .onDelete(perform: store.delete)
+                    .onDelete(perform: store.delete)
             }
-            .listStyle(.plain)
-            .navigationTitle("내 메모")
-            .toolbar{
-                Button{
+                .listStyle(.plain)
+                .navigationTitle("메모")
+                .toolbar {
+                Button {
                     showComposer = true
                 } label: {
                     Image(systemName: "plus")
                 }
             }
-            .sheet(isPresented: $showComposer){
+                .sheet(isPresented: $showComposer) {
                 ComposeView()
-        }
-        }
+            }
+        }.searchable(text: $searchText,
+                     placement: .navigationBarDrawer,
+                     prompt: "검색")
     }
+
 }
 
 struct MainListView_Previews: PreviewProvider {

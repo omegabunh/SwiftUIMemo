@@ -12,6 +12,7 @@ struct MemoCell: View {
     
     var body: some View {
         VStack (alignment: .leading){
+
             Text(memo.content)
                 .font(.body)
                 .lineLimit(1)
