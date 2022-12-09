@@ -34,13 +34,18 @@ struct MainListView: View {
                 }
                     .onDelete(perform: store.delete)
             }
-                .listStyle(.plain)
                 .navigationTitle("메모")
                 .toolbar {
-                Button {
-                    showComposer = true
-                } label: {
-                    Image(systemName: "plus")
+                    ToolbarItemGroup(placement: .bottomBar){
+                        Spacer()
+                        Text("\(store.list.count)개의 메모")
+                            .font(.system(size: 13.0))
+                        Spacer()
+                    Button {
+                        showComposer = true
+                    } label: {
+                        Image(systemName: "square.and.pencil")
+                    }
                 }
             }
                 .sheet(isPresented: $showComposer) {

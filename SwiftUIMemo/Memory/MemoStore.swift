@@ -11,7 +11,9 @@ class MemoStore: ObservableObject{
     @Published var list: [Memo]
     
     init(){
-        list = []
+        list = [
+            Memo(content: "hello",insertDate: Date.now)
+        ]
         
     }
     func insert(memo: String){
